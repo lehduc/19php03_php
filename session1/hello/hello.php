@@ -25,6 +25,7 @@
 			case '5':
 			case '7':
 			case '8':
+			case '10':
 			case '12':
 				echo " thang  $i co 31 ngay";
 				echo "<br>";
@@ -41,7 +42,7 @@
 				echo "<br>";
 				break;
 			default:
-			
+				echo "khong phai thang trong nam";
 				break;
 			}
 		}		
@@ -55,7 +56,7 @@
 	echo "<br>";
 	if ($i <= 12) {
 		echo "$i la thang trong nam";
-		if ($i == 1 || $i == 3 || $i == 5 || $i == 7 || $i == 8 || $i == 12) {
+		if ($i == 1 || $i == 3 || $i == 5 || $i == 7 || $i == 8 || $i == 10 || $i == 12) {
 			echo " va thang $i co 31 ngay";
 		} else if ($i == 2) {
 			echo "<br>";
