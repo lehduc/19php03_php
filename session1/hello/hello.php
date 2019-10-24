@@ -48,9 +48,10 @@
 	}
 ?> -->
 <?php 
-	echo "moi nhap thang:";
+	$i = 3;
+	echo "moi nhap thang:" ;
+	echo $i;
 	echo "<br>";
-	$i = 2;
 	if ($i <= 12) {
 		echo "$i la thang trong nam";
 		if ($i == 1 || $i == 3 || $i == 5 || $i == 7 || $i == 8 || $i == 12) {
