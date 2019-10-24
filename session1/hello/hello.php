@@ -1,7 +1,7 @@
 <?php 
 	echo '<h1 style="color:red"> hello world</h1>';
 ?>
-<h2>thong tin</h2>
+<h2 style="color:brown" >Thông Tin -  Bài 4</h2>
 <?php 
 	$userName = 'php03';
 	echo $userName;
@@ -47,8 +47,9 @@
 		}		
 	}
 ?> -->
+<h2 style="color:brown" >Ngày Tháng - bài 5</h2>
 <?php 
-	$i = 3;
+	$i = 5;
 	echo "moi nhap thang:" ;
 	echo $i;
 	echo "<br>";
