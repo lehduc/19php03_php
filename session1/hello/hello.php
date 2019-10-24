@@ -1,7 +1,7 @@
 <?php 
 	echo '<h1 style="color:red"> hello world</h1>';
 ?>
-<h2 style="color:brown" >Thông Tin -  Bài 4</h2>
+<h2 style="color:blue" >Thông Tin -  Bài 4</h2>
 <?php 
 	$userName = 'php03';
 	echo $userName;
@@ -47,7 +47,7 @@
 		}		
 	}
 ?> -->
-<h2 style="color:brown" >Ngày Tháng - bài 5</h2>
+<h2 style="color:pink" >Ngày Tháng - bài 5</h2>
 <?php 
 	$i = 5;
 	echo "moi nhap thang:" ;
@@ -57,7 +57,7 @@
 		echo "$i la thang trong nam";
 		if ($i == 1 || $i == 3 || $i == 5 || $i == 7 || $i == 8 || $i == 12) {
 			echo " va thang $i co 31 ngay";
-		} else if ($i = 2) {
+		} else if ($i == 2) {
 			echo "<br>";
 			echo " va thang $i co 28 hoac 29 ngay";
 		} else {
