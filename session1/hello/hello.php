@@ -13,9 +13,9 @@
 	echo $phone;
 	echo "<br>";
 ?>
-<?php 
+<!-- <?php 
 	$i = '';
-	echo 'moi nhap i : ' + $i;
+	echo 'moi nhap tháng: ';
 	echo "<br>";
 	for ($i=1; $i<=12 ; $i++) { 
 		if ($i <= 12) {
@@ -46,5 +46,23 @@
 			}
 		}		
 	}
+?> -->
+<?php 
+	echo "moi nhap thang:";
+	echo "<br>";
+	$i = 2;
+	if ($i <= 12) {
+		echo "$i la thang trong nam";
+		if ($i == 1 || $i == 3 || $i == 5 || $i == 7 || $i == 8 || $i == 12) {
+			echo " va thang $i co 31 ngay";
+		} else if ($i = 2) {
+			echo "<br>";
+			echo " va thang $i co 28 hoac 29 ngay";
+		} else {
+			echo " va thang $i co 30 ngay";
+		}
+	}
+	else {
+		echo "$i khong phai la thang trong nam";
+	}
 ?>
-
