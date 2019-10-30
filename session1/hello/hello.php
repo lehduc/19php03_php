@@ -6,7 +6,7 @@
 	$userName = 'php03';
 	echo $userName;
 	echo "<br>";
-	$adress = 'Da Nang';
+	$adress = 'Quang Binh';
 	echo $adress;
 	echo "<br>";
 	$phone = "0349818101";
@@ -48,24 +48,24 @@
 		}		
 	}
 ?> -->
-<h2 style="color:pink" >Ngày Tháng - bài 5</h2>
+<h2 style=" color:pink " >Ngày Tháng - bài 5</h2>
 <?php 
 	$i = 5;
-	echo "moi nhap thang:" ;
+	echo " moi nhap thang: " ;
 	echo $i;
 	echo "<br>";
 	if ($i <= 12) {
-		echo "$i la thang trong nam";
+		echo " $i la thang trong nam ";
 		if ($i == 1 || $i == 3 || $i == 5 || $i == 7 || $i == 8 || $i == 10 || $i == 12) {
 			echo " va thang $i co 31 ngay";
 		} else if ($i == 2) {
-			echo "<br>";
-			echo " va thang $i co 28 hoac 29 ngay";
+			echo " <br> ";
+			echo " va thang $i co 28 hoac 29 ngay ";
 		} else {
-			echo " va thang $i co 30 ngay";
+			echo " va thang $i co 30 ngay ";
 		}
 	}
 	else {
-		echo "$i khong phai la thang trong nam";
+		echo " $i khong phai la thang trong nam ";
 	}
 ?>

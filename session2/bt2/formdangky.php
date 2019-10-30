@@ -105,13 +105,42 @@
 			<input type="date" name="bithday" value="<?php echo $bithday;?>">
 		</p>
 		<p class="error"><?php echo $errBithday;?></p>
-		<p class="panel">City
+		<!-- <p class="panel">City
 			<select name="city">
 				<option value="" <?php echo $city == ''?"selected":'';?>>Please choose city</option>
 				<option value="danang" <?php echo $city == 'danang'?"selected":'';?>>Da Nang</option>
 				<option value="quangnam" <?php echo $city == 'quangnam'?"selected":'';?>>Quang Nam</option>				
 			</select>
-		</p>
+		</p> -->
+		<div id="demo-content">
+    <div class="frmDronpDown">
+        <div class="row">
+            <label>Country:</label><br /> <select name="country"
+                id="country-list" class="demoInputBox"
+                onchange="getState(this.value);">
+                <option value="" disabled="" selected="">Select Country</option>
+                <option value="1">Brazil</option>
+                <option value="2">China</option>
+                <option value="3">France</option>
+                <option value="4">India</option>
+                <option value="5">USA</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>State:</label><br /> <select name="state"
+                id="state-list" class="demoInputBox"
+                onChange="getCity(this.value);">
+                <option value="">Select State</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>City:</label><br /> <select name="city"
+                id="city-list" class="demoInputBox">
+                <option value="">Select City</option>
+            </select>
+        </div>
+    </div>
+</div>
 		<p class="error"><?php echo $errCity;?></p>
 		<p><input type="submit" id="register" name="register" value="Register"></p>
 	</form>
