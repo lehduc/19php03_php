@@ -5,12 +5,12 @@
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="text/css" href="img/icon_24h.ico">
 	<meta name="keywords" content="PHP, mysql, SDC">
-	<meta name="depscription" content="This is  register form">
+	<meta name="depscription" content="This is register form">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<?php
-	include 'connect.php';
+	// include 'connect.php';
 		//tao mang key value cho danh muc san pham
 		$arrCategory = array('cate1' => 'category1','cate2' => 'category2');
 		//khoi tao cac bien loi

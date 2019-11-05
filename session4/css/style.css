@@ -5,10 +5,10 @@ h1 {
 	width: 80%;
 	margin: 0 auto;
 	border: 1px solid black;
-	height: 400px;
+	height: 600px;
 }
 .form-control {
-	margin: 20px;
+	margin: 10px;
 	height: 30px;
 }
 .label {
@@ -17,9 +17,8 @@ h1 {
 }
 .input {
 	width: 70%;
-	float: left;
-	margin: 10px;
-	
+	float: left;	
+}	
 .error {
 	color: red;
 }
