@@ -40,7 +40,6 @@
 			$datePost = $_POST['datepost'];
 			$dateOver = $_POST['dateover'];
 			$category = $_POST['category'];
-
 			
 			//validate loi de trong (co ban)
 			if ($nameProduct == '') {
@@ -106,21 +105,21 @@
 			<div class="form-control">
 				<div class="label">Tên Sản Phẩm</div>
 				<div class="input">
-					<input type="text" name="nameproduct" id="nameproduct">
+					<input type="text" name="nameproduct" id="nameproduct" value="<?php echo $nameProduct?>">
 					<span class="error"><?php echo "$errNameproduct"; ?></span>
 				</div>
 			</div>
 			<div class="form-control">
 				<div class="label">Mô tả</div>
 				<div class="input">
-					<input type="textarea" name="description" id="description">
+					<input type="textarea" name="description" id="description" value="<?php echo $description?>">
 					<span class="error"><?php echo "$errDescription"; ?></span>
 				</div>
 			</div>
 			<div class="form-control">
 				<div class="label">Giá</div>
 				<div class="input">
-					<input type="text" name="price" id="price">
+					<input type="text" name="price" id="price" value="<?php echo $price?>">
 					<span class="error"><?php echo "$errPrice"; ?></span>
 				</div>
 			</div>
@@ -134,14 +133,14 @@
 			<div class="form-control">
 				<div class="label">Ngày đăng</div>
 				<div class="input">
-					<input type="date" name="datepost" id="datepost">
+					<input type="date" name="datepost" id="datepost" value="<?php echo $datePost?>">
 					<span class="error"><?php echo "$errDatepost"; ?></span>
 				</div>
 			</div>
 			<div class="form-control">
 				<div class="label">Ngày hết hạn</div>
 				<div class="input">
-					<input type="date" name="dateover" id="dateover">
+					<input type="date" name="dateover" id="dateover" value="<?php echo $dateOver?>">
 					<span class="error"><?php echo "$errDateover"; ?></span>
 				</div>
 			</div>

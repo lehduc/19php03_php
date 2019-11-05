@@ -26,10 +26,8 @@
 	$sql = "INSERT INTO product (name, decription, price, avatar, datepost, dateover, category ) VALUES ('$name', '$decription', '$price', '$avatar', '$datepost', '$dateover', '$category')";
 
 	// thuc thi cau lenh 
-	if (mysqli_query($connect, $sql) === TRUE) {
-		echo "Register success!";
-	} else {
-		echo "Register error";
-	}
+	if (mysqli_query($connect, $sql) === FALSE) {
+		echo "erro";
+	} 
 
 ?>
