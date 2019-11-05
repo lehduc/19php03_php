@@ -18,7 +18,8 @@ h1 {
 .input {
 	width: 70%;
 	float: left;
-}
+	margin: 10px;
+	
 .error {
 	color: red;
 }

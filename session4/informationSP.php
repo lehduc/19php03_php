@@ -112,7 +112,7 @@
 			<div class="form-control">
 				<div class="label">Mô tả</div>
 				<div class="input">
-					<input type="textarea" name="description" id="description" value="<?php echo $description?>">
+					<textarea rows="5" cols="20" name="description" ><?php echo $description?></textarea>
 					<span class="error"><?php echo "$errDescription"; ?></span>
 				</div>
 			</div>
