@@ -10,6 +10,7 @@
 </head>
 <body>
 	<?php
+	include 'connect.php';
 		//tao mang key value cho danh muc san pham
 		$arrCategory = array('cate1' => 'category1','cate2' => 'category2');
 		//khoi tao cac bien loi
@@ -39,6 +40,7 @@
 			$datePost = $_POST['datepost'];
 			$dateOver = $_POST['dateover'];
 			$category = $_POST['category'];
+
 			
 			//validate loi de trong (co ban)
 			if ($nameProduct == '') {
@@ -77,6 +79,9 @@
 					$errCategory = 'please input category';
 				}	
 			//ket thuc xu lys validate
+			if ($datePost > $dateOver) {
+				echo "ngày kết thúc phải lớn hơn ngày đăng";
+			}
 			//---------------------------------------------------------
 			//in ra thong tin san pham
 			if ($checkValidate) {
@@ -91,6 +96,7 @@
 			}
 			//ket thuc su kien in ra thong tin san pham
 			//---------------------------------------------------------
+			
 		}
 
 	?>
