@@ -1,9 +1,9 @@
 <?php 
 	// thong tin ket noi database
-	$server = 'localhost'; //$server = '127.0.0.1'
-	$username = 'root'; // username default
+	$server = ''; //$server = '127.0.0.1'
+	$username = ''; // username default
 	$password = ''; // password default
-	$database = '19php03_infosp'; // ket noi den database nay
+	$database = ''; // ket noi den database nay
 	
 	// thuc hien ket noi database
 	$connect = mysqli_connect($server, $username, $password, $database);
@@ -27,7 +27,7 @@
 
 	// thuc thi cau lenh 
 	if (mysqli_query($connect, $sql) === FALSE) {
-		echo "erro";
+		echo "error";
 	} 
 
 ?>
