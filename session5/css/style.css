@@ -1,0 +1,19 @@
+h1 {
+	color: blue;
+	text-align: center;
+}
+.register-form {
+	border: 1px solid grey;
+	height: 500px;
+	margin: 0 auto;
+	width: 80%;
+}
+.form-control {
+	margin: 20px;
+}
+.register {
+	margin-left: 20px;
+}
+.error {
+	color: red;
+}
