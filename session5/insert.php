@@ -42,14 +42,6 @@
 		$avatar = $_FILES['avatar'];
 		//lay gia tri ten anh 
 		$avatarName = $avatar['name'];
-		//var_dump($avatar);
-
-		// cau lenh insert du lieu
-		$sql = "INSERT INTO product1 (name, price, avatar) VALUES ('$nameProduct', '$price', '$avatarName')";
-
-		// thuc thi cau lenh 
-		mysqli_query($connect, $sql);
-		
 		//validate loi de trong (co ban)
 		if ($nameProduct == '') {
 				$checkValidate = false;
@@ -80,9 +72,12 @@
 			echo "<img src='uploads/$avatarName'> <br>";
 		}
 		//ket thuc su kien in ra thong tin san pham
-		//---------------------------------------------------------		
-	}
-
+		//---------------------------------------------------------	
+		// cau lenh insert du lieu
+		$sql = "INSERT INTO product1 (name, price, avatar) VALUES ('$nameProduct', '$price', '$avatarName')";
+		// thuc thi cau lenh 
+		mysqli_query($connect, $sql);	
+	}		
 	?>
 	<h1>Information Product</h1>
 	<div class="register-form">
