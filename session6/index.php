@@ -43,7 +43,7 @@
 			$sqlInsert = "INSERT INTO news(title, description, avatar) VALUES ('$title', '$description', '$avatar')";
 			if (mysqli_query($connect, $sqlInsert) === TRUE) {
 				// chuyen trang
-				header('Location: list_users.php');
+				header('Location: list_news.php');
 			}
 		}
 	?>

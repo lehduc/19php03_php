@@ -47,7 +47,7 @@
 			echo "<td>".$row['title']."</td>";
 			echo "<td>".$row['description']."</td>";
 			echo "<td><img src='uploads/".$row['avatar']."'></td>";
-			echo "<td><a href='index.php?id=".$id."''>Thêm</a></td>";
+			echo "<td><a href='index.php'>Thêm</a></td>";
 			echo "<td><a href='delete.php?id=".$id."''>Delete</a></td>";
 			echo "<td><a href='repair.php?id=".$id."''>Repair</a></td>";
 			echo "</tr>";
