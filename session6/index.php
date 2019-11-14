@@ -22,7 +22,7 @@
 		if (isset($_POST['register'])) {
 			$title = $_POST['title'];
 			$description = $_POST['description'];
-			$avatar = 'default.png';
+			$avatar = 'default.png';	
 			if ($title == '') {
 					$checkValidate = false;
 					$errTitle = 'please input title';

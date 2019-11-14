@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>List users</title>
+	<title>List news</title>
 	<style type="text/css">
 		table {
 			border-collapse: collapse;
@@ -16,7 +16,7 @@
 	</style>
 </head>
 <body>
-	<h1>List users</h1>
+	<h1>List News</h1>
 	<a href="index.php">Register</a>
 	<form action="#" method="POST">
 		<p>Search

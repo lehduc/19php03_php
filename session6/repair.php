@@ -12,39 +12,42 @@
     include 'functions.php';
     // lay thong tin trong bang news can edit ra
     $id = $_GET['id'];
-    $sql = "SELECT * FROM news WHERE id = $id";
-    $result = mysqli_query($connect, $sql);
+    $sqlEdit = "SELECT * FROM news WHERE id = $id";
+    $result = mysqli_query($connect, $sqlEdit);
     $editNews = $result->fetch_assoc();
     //
     $errTitle = $errDes = $errAvatar = '';
     $title = $editNews['title'];
     $description = $editNews['description'];
     $avatar = $editNews['avatar'];
-    $checkAdd = true;
+    $checkRepair = true;
     if (isset($_POST['repair'])) {
       $title = $_POST['title'];
       $description = $_POST['description'];
       if ($title == '') {
         $errTitle = 'Please input title';
-        $checkAdd = false;
+        $checkRepair = false;
       }
       if ($description == '') {
         $errDes = 'Please input description';
-        $checkAdd = false;
+        $checkRepair = false;
       }
+      //kiem tra xem title trong csdl co ton tại hay ko
       if (checkExistTitle($title, $connect)) {
         $errTitle = 'news title exist';
-        $checkAdd  = false;
+        $checkRepair  = false;
       }
       if ($_FILES['avatar']['error'] == 0 && $_FILES['avatar']['size'] > 102400) {
         $errAvatar = 'Please select a photo less than 100kb';
-        $checkAdd = false;
+        $checkRepair = false;
       }
       //
-      if ($checkAdd) {
+      if ($checkRepair) {
         // check and upoad avatar
         if ($_FILES['avatar']['error'] == 0) {
+        	//tao bien oldAvatar de remove ảnh
           $oldAvatar = $avatar;
+          //uniquid ma thong bao duy nhat
           $avatar = uniqid().'_'.$_FILES['avatar']['name'];
           move_uploaded_file($_FILES['avatar']['tmp_name'], 'uploads/'.$avatar);
           // Xoa anh cu neu chon anh moi (tru truong hop a cu la anh default)
@@ -53,9 +56,9 @@
           }
         }
         // end avatar upload
-        $sql = "UPDATE news SET title = '$title', description = '$description', avatar = '$avatar' WHERE id = $id";
+        $sqlEdit = "UPDATE news SET title = '$title', description = '$description', avatar = '$avatar' WHERE id = $id";
         if (mysqli_query($connect, $sql) === TRUE) {
-          header("Location: list_product.php");
+          header("Location: list_news.php");
         } else {
           echo "Repair News fail";
         }
