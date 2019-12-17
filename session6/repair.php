@@ -12,8 +12,11 @@
     include 'functions.php';
     // lay thong tin trong bang news can edit ra
     $id = $_GET['id'];
-    $sqlEdit = "SELECT * FROM news WHERE id = $id";
+    // var_dump($id);
+    exit();  
+    $sqlEdit = "SELECT * FROM news WHERE id =".$id;
     $result = mysqli_query($connect, $sqlEdit);
+     var_dump($result);
     $editNews = $result->fetch_assoc();
     //
     $errTitle = $errDes = $errAvatar = '';

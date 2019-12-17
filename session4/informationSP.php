@@ -57,8 +57,12 @@
 		$dateOver = $_POST['dateover'];
 		$category = $_POST['category'];
 
+		//lay gia tri ten anh 
+		$avatarName = $avatar['name'];
+		//var_dump($avatar);
+
 		// cau lenh insert du lieu
-		$sql = "INSERT INTO product (name, description, price, avatar, datepost, dateover, category ) VALUES ('$nameProduct', '$description', '$price', '$avatar', '$datePost', '$dateOver', '$category')";
+		$sql = "INSERT INTO product (name, description, price, avatar, datepost, dateover, category ) VALUES ('$nameProduct', '$description', '$price', '$avatarName', '$datePost', '$dateOver', '$category')";
 
 		// thuc thi cau lenh 
 		mysqli_query($connect, $sql);
@@ -116,8 +120,7 @@
 			echo "Category: $category <br>";
 		}
 		//ket thuc su kien in ra thong tin san pham
-		//---------------------------------------------------------
-		
+		//---------------------------------------------------------		
 	}
 
 	?>
@@ -179,6 +182,7 @@
 			</div>
 			<div class="form-control">
 				<div class="input">
+					
 					<input type="submit" name="register" value="Reigster">
 				</div>
 			</div>

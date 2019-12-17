@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="text/css" href="img/tuoitho.jpg">
 	<meta name="keywords" content="PHP, mysql, SDC">
-	<meta name="depscription" content="This is register form">
+	<meta name="description" content="This is register form">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -62,7 +62,6 @@
 				move_uploaded_file($avatar['tmp_name'], 'uploads/'.$avatarName);
 			}
 		// ket thuc xu li su kien up load avatar
-
 		//---------------------------------------------------------
 		//in ra thong tin san pham
 		if ($checkValidate) {

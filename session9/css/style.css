@@ -1,0 +1,26 @@
+h1 {
+	text-align: center;
+}
+#content {
+	border: 1px black solid;
+	width: 600px;
+	margin: auto;
+}
+.find {
+	float: left;
+	margin-left: 10px;	
+}
+.register {
+	float: right;
+	margin-right: 15px;
+	color: green;
+}
+table {
+	border: 1px grey solid;
+	text-align: center;w
+	margin: auto;
+	width: 600px;
+}
+img {
+	width: 150px;
+}
